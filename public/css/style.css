@@ -1,0 +1,207 @@
+
+
+/* Remover margens e preenchimentos padrão */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* Tornar elementos de lista não decorados */
+ul, ol {
+  list-style: none;
+}
+
+/* Definir estilos de hyperlink básicos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover decoração de texto sublinhado de links não visitados */
+a:hover, a:active {
+  text-decoration: none;
+}
+
+/* Corrigir problemas com elementos em linha e bloco */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+/* Corrigir a exibição de imagem como bloco */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adicionar estilo de caixa padrão a todos os elementos */
+body {
+  line-height: 1;
+}
+
+/* Remover espaçamento em torno de elementos de tabela no IE8 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Definir a largura máxima do contêiner e centralizar o layout */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#body{
+  background-color: rgb(221, 221, 221);
+}
+#navbar {
+  justify-content: center;
+}
+#navbar .container{
+
+  width: 100%;
+}
+
+#nav-container,header{
+margin: 0;
+}
+#nav-container .navbarNav-search{
+  width: 100%;
+}
+#nav-container .navbar-itens{
+  width: 20%;
+}
+#nav-container .navbar-toggler{
+  margin: 7px 0;
+}
+
+@media (min-width: 1700px) {
+  #navbar .container{
+    justify-content: center;
+    max-width: 1700px;
+  }
+}
+
+#container-principal{
+  margin: 10px auto;
+  border-radius: 30px;
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: 1px 0px 10px 1px rgb(194, 194, 194);
+  box-sizing: border-box;
+}
+#container-principal .card{
+  border: none;
+}
+#container-comments{
+  border: 1px solid rgb(206, 206, 206);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 30px;
+}
+#container-comments .card {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.comment {
+  margin-left: 0px;
+  /* Adiciona margem à esquerda para aninhar os comentários */
+}
+
+.comment-level-1 {
+  margin-left: 40px;
+  /* A partir da terceira resposta, a margem será dobrada */
+}
+
+.comment-level-2 {
+  margin-left: 100px;
+  /* A partir da terceira resposta, a margem será dobrada */
+}
+#form-create-post .note-editing-area{
+  border: 1px solid rgb(231, 231, 231);
+}
+
+#search-container{
+  background-image: url('../img/Banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 110px;
+  text-align: center;
+}
+
+#search-container h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+#search-container form{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dashboard-title-container{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dashboard-posts-container th{
+  width: 25%;
+}
+
+.dashboard-acao{
+  display: inline-flex;
+}
+
+.dashboard-acao .btn{
+  margin: 0 3px;
+}
+.figure-caption span{
+  font-weight: bold;
+  padding: 5px;
+}
+#img-post img{
+  padding: 30px;
+  margin: auto;
+}
+#show-post #title{
+  margin: auto;
+  padding: 5px;
+  font-size: 40px;
+
+}
+
+#form-create-post img{
+  max-width: 700px;
+  max-height: 600px;
+  margin: 20px;
+}
+
+
+
+.msg {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px;
+}
